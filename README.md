@@ -20,6 +20,28 @@ The project processes a heavily validated, consolidated medical imaging cohort c
 * **Pituitary Tumors**: Abnormal growths developing inside the pituitary gland pocket at the skull base. These trigger severe mass effects on neighboring optic structures and cause massive systemic endocrine/hormonal imbalances.
 * **No Tumor**: Clean, benchmark healthy control scans displaying non-pathological neuroanatomy. Essential for training the system to minimize false positives and prevent healthy patients from undergoing unwarranted clinical interventions.
 
+
+
+###  Deep Learning Training Metrics
+To verify model optimization stability, examine the cross-entropy loss convergence and accuracy metrics across execution epochs:
+
+| Training & Validation Diagnostics | Dataset Sample Analysis |
+| :---: | :---: |
+| ![Model Metrics](assets/assets/training_metrics.png) | ![Sample Predictions](assets/assets/sample_predictions.png) |
+
+---
+
+###  Feature Map Visualizations & Clinical Diagnostics
+Below are the localized intermediate activation layers showcasing how the Multi-Tier CNN isolates specific structural abnormalities within the raw MRI input matrices:
+
+<p align="center">
+  <img src="assets/assets/ai-2.png" width="400" alt="CNN Feature Isolation Layer">
+  <img src="assets/assets/ai-3.png" width="400" alt="Brain Tumor Segmentation Mapping">
+</p>
+
+
+
+
 ###  Comprehensive Cohort Distribution
 To prevent data leakage and guarantee experimental integrity, the collection is systematically divided into isolated training and evaluation testing frameworks:
 
@@ -130,26 +152,6 @@ The predictive performance across all four classes highlights balanced diagnosti
 * **F1-Score Metrics**: The harmonic mean metrics across all four diagnostic domains remain closely balanced, indicating consistent, reliable classification performance without any class-bias degradation.
 
 
-cnn-brain-tumor-classification/
-│
-├── cnn-brain-tumor-classification.ipynb  # Primary Jupyter Engineering Notebook
-├── README.md                             # Production Portfolio Documentation
-│
-├── dataset/                              # Root Directory for Medical Slices
-│   ├── Training/                         # 5,712 Ingestion Scans
-│   │   ├── glioma/
-│   │   ├── meningioma/
-│   │   ├── no_tumor/
-│   │   └── pituitary/
-│   │
-│   └── Testing/                          # 1,311 Validation Evaluation Scans
-│       ├── glioma/
-│       ├── meningioma/
-│       ├── no_tumor/
-│       └── pituitary/
-│
-└── saved_models/                         # Best Historical Performance Output Backups
-└── best_brain_tumor_model.h5         # Exported Low-Loss Checkpoint Weights
 
 
 
