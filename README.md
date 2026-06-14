@@ -21,24 +21,21 @@ The project processes a heavily validated, consolidated medical imaging cohort c
 * **No Tumor**: Clean, benchmark healthy control scans displaying non-pathological neuroanatomy. Essential for training the system to minimize false positives and prevent healthy patients from undergoing unwarranted clinical interventions.
 
 
-
-### 📈 Deep Learning Training Metrics
+###  Deep Learning Training Metrics
 To verify model optimization stability, examine the cross-entropy loss convergence and accuracy metrics across execution epochs:
 
 | Training & Validation Diagnostics | Dataset Sample Analysis |
 | :---: | :---: |
-| ![Model Metrics](assets/training_metrics.png) | ![Sample Predictions](assets/assets/sample_predictions.png) |
+| ![Model Metrics](assets/training_metrics.png) | ![Sample Predictions](assets/sample_predictions.png) |
 
----
 
-### 🧠 Feature Map Visualizations & Clinical Diagnostics
+###  Feature Map Visualizations & Clinical Diagnostics
 Below are the localized intermediate activation layers showcasing how the Multi-Tier CNN isolates specific structural abnormalities within the raw MRI input matrices:
 
 <p align="center">
   <img src="assets/ai-2.png" width="400" alt="CNN Feature Isolation Layer">
   <img src="assets/ai-3.png" width="400" alt="Brain Tumor Segmentation Mapping">
 </p>
-
 
 
 
