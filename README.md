@@ -152,6 +152,16 @@ The predictive performance across all four classes highlights balanced diagnosti
 
 
 
+##  Tech Stack & Dependencies
+This project is built using Python  and a robust deep learning ecosystem:
+
+* **Core Language:** Python
+* **Deep Learning:** TensorFlow, Keras
+* **Data Processing:** NumPy, Pandas
+* **Visualization:** Matplotlib, Seaborn
+* **Environment:** Jupyter Notebook
+
+
 
 
 
